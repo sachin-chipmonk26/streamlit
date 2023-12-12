@@ -25,4 +25,12 @@ Llama2 Chatbot is a conversational AI powered by the Replicate platform and impl
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/llama2-chatbot.git
+   git clone https://github.com/sachin-chipmonk26/streamlit
+   ````
+2. To run this application on your local machine
+   
+   ```bash
+   streamlit run chat.py
+   ````
+
+  
