@@ -15,9 +15,9 @@ Chicken Mexicana,Please choose the size? 1.Regular 2.Medium 3.Large
 Chicken Golden Delight,Please choose the size? 1.Regular 2.Medium 3.Large
 Barbeque Chicken,Please choose the size? 1.Regular 2.Medium 3.Large
 Chicken Fiesta,Please choose the size? 1.Regular 2.Medium 3.Large
-Regular,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes 2.No)"
-Medium,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes 2.No)"
-Large,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes 2.No)"
+Regular,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes 2.No"
+Medium,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes 2.No"
+Large,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes 2.No"
 Yes,Please choose how would you like to customize? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
 Crust Type, Pick a crust type. 1.Classic Hand Tossed 2.Wheat Thin Crust 3.Cheese Burst 4.Fresh Pan Pizza 5.Italian Crust 6.Double Cheese Crunch
 Classic Hand Tossed, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
@@ -39,8 +39,7 @@ Red Paprika, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am do
 Babycorn, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
 BBQ Chicken, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing 
 Add Extra Cheese, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
-I am done customizing, "Do you want to order more pizza? 1.Yes, I want to 2.No, I don't want"
-"No, I don't want", Do you want to order more pizza? 1.Yes 2.No
+"I am done customizing","Do you want to order more pizza? 1.Yes, I want to 2.No, I don't want"
 No, I don't want more pizza. Please Provide your info
 Crust Type,Choose from the options below 1.Classic Hand Tossed 2.Wheat Thin Crust 3.Cheese Burst 4.Fresh Pan pizza 5.Italian Crust 6.Double Cheese Crunch
 Classic Hand Tossed,Please choose if anything else needs to be added 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
