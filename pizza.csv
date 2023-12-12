@@ -19,7 +19,28 @@ Regular,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese 
 Medium,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes 2.No)"
 Large,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes 2.No)"
 Yes,Please choose how would you like to customize? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
-No, I don't want to customize. Do you want to order more pizza? 1.Yes 2.No
+Crust Type, Pick a crust type. 1.Classic Hand Tossed 2.Wheat Thin Crust 3.Cheese Burst 4.Fresh Pan Pizza 5.Italian Crust 6.Double Cheese Crunch
+Classic Hand Tossed, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Wheat Thin Crust, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Cheese Burst, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Fresh Pan Pizza, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Italian Crust, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Double Cheese Crunch, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Toppings, Select one or more Toppings. 1.Black Olive 2.Onion 3.Crisp Capsicum 4.Paneer 5.Mushroom 6.Golden Corn 7.Fresh Tomato 8.Jalapeno 9.Red Paprika 10.Babycorn 11.BBQ Chicken
+Black Olive, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Onion, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Crisp Capsicum, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Paneer, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Mushroom, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Golden Corn, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Fresh Tomato, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Jalapeno, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Red Paprika, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+Babycorn, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+BBQ Chicken, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing 
+Add Extra Cheese, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+I am done customizing, "Do you want to order more pizza? 1.Yes, I want to 2.No, I don't want"
+"No, I don't want", Do you want to order more pizza? 1.Yes 2.No
 No, I don't want more pizza. Please Provide your info
 Crust Type,Choose from the options below 1.Classic Hand Tossed 2.Wheat Thin Crust 3.Cheese Burst 4.Fresh Pan pizza 5.Italian Crust 6.Double Cheese Crunch
 Classic Hand Tossed,Please choose if anything else needs to be added 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
@@ -30,16 +51,5 @@ I am done customizing,Please choose the Quantity 1 | 2 | 3 | 4 | 5 |6
 4,Please Provide your info. What's your full name?
 5,Please Provide your info. What's your full name?
 6,Please Provide your info. What's your full name?
-No, I don't want more pizza. Please Provide your info. What's your full name?
-John,Your mobile Number?
-1234567890,Please add your address and hit enter when you are done
-" 2nd Cross Rd,  KHB Colony,  5th Block,  Koramangala,  Bengaluru,  Karnataka 560095",Your order is placed. Thanks for choosing us. Hope to see you soon
-,Hello! How may I assist you today? Please let me know if you have any questions or if there is anything specific you would like to discuss.
-Veg Pizza,Sure thing! Would you like me to recommend some popular veg pizza options or would you like to explore
-hi,�
-Toppings,Great
-John Wick,Great
-123456789,Your
-"2nd Cross Rd,  KHB Colony,  5th Block,  Koramangala,  Bengaluru,  Karnataka 560095",Great
-""" 2nd Cross Rd,  KHB Colony,  5th Block,  Koramangala,  Bengaluru,  Karnataka 560095""",
-Crust type,Would
+
+

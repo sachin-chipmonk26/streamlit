@@ -9,6 +9,10 @@ try:
     custom_dataset_data = pd.read_csv(custom_dataset_path)
     custom_dataset = pd.DataFrame(custom_dataset_data)
 
+    custom_user_path = r".\userdata.csv"
+    custom_user_data = pd.read_csv(custom_user_path)
+    custom_user = pd.DataFrame(custom_user_data)
+
     print(type(custom_dataset))
     print(custom_dataset.info())
 
@@ -44,7 +48,7 @@ try:
 
     # Store LLM generated responses
     if "messages" not in st.session_state.keys():
-        st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
+        st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?Say Hi"}]
 
     # Display or clear chat messages
     for message in st.session_state.messages:
@@ -58,31 +62,23 @@ try:
     def generate_llama2_response(prompt_input):
         global custom_dataset
         # Use the custom dataset if the prompt matches any user prompt in the dataset
-        user_prompt_match = custom_dataset[custom_dataset['user_prompt'] == prompt_input]
+        user_prompt_match = custom_dataset[custom_dataset['user_prompt'].str.lower() == prompt_input.lower()]
+        # user_prompt_match = custom_dataset[custom_dataset['user_prompt'] == prompt_input]
         print(f"prompt_input: {prompt_input}")
         print(f"user_prompt_match: {user_prompt_match}")
+        print(type(user_prompt_match))
+
+        ls = ['1','2','3','4','5','6']
 
         if not user_prompt_match.empty:
-            response = user_prompt_match['assistant_response'].values[0]
+            if(prompt_input in ls):
+                # Append the new user prompt and assistant response to the custom dataset
+                custom_user = pd.concat([custom_user_data, pd.DataFrame({'Username': [response]})], ignore_index=True)
+                custom_user.to_csv(custom_user_path, index=False)
+            else:
+                response = user_prompt_match['assistant_response'].values[0]
         else:
-            # If no match is found, use the Llama 2 model to generate a response
-            string_dialogue = "You are a helpful assistant. You do not respond as 'User' or pretend to be 'User'. You only respond once as 'Assistant'."
-            for dict_message in st.session_state.messages:
-                if dict_message["role"] == "user":
-                    string_dialogue += "User: " + dict_message["content"] + "\n\n"
-                else:
-                    string_dialogue += "Assistant: " + dict_message["content"] + "\n\n"
-
-            # Use Llama 2 model to generate a response
-            output = replicate.run('a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5',
-                                input={"prompt": f"{string_dialogue} {prompt_input} Assistant: ",
-                                        "temperature": temperature, "top_p": top_p, "max_length": max_length, "repetition_penalty": 1})
-            response = ''.join(output)
-
-            # Append the new user prompt and assistant response to the custom dataset
-            custom_dataset = pd.concat([custom_dataset, pd.DataFrame({'user_prompt': [prompt_input], 'assistant_response': [response]})], ignore_index=True)
-            custom_dataset.to_csv(custom_dataset_path, index=False)
-
+            response = "Please,Select from the listed options"
         return response
 
     # User-provided prompt
