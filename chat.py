@@ -58,7 +58,9 @@ try:
     def generate_llama2_response(prompt_input):
         global custom_dataset
         # Use the custom dataset if the prompt matches any user prompt in the dataset
-        user_prompt_match = custom_dataset[custom_dataset['user_prompt'] == prompt_input]
+        # user_prompt_match = custom_dataset[custom_dataset['user_prompt'] == prompt_input]
+        # Convert the input to lowercase for case-insensitive matching
+        user_prompt_match = custom_dataset[custom_dataset['user_prompt'].str.lower() == prompt_input.lower()]
         print(f"prompt_input: {prompt_input}")
         print(f"user_prompt_match: {user_prompt_match}")
 
