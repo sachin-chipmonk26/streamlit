@@ -2,31 +2,31 @@ user_prompt,assistant_response
 Hi,Hello! Welcome! What kind of pizza would you like to order? 1.Veg pizza 2.Non Veg pizza
 Veg pizza,Choose one from the menu options 1.Veg Extravaganza 2.Peppy Paneer 3.Double cheese Margherita 3.Corn pizza 4.FarmHouse 5.Margherita
 Non Veg pizza,Choose one from the menu options 1.Chicken Dominator 2.Cheese and Pepperoni 3.Non Veg Supreme 4.Chicken Mexicana 5.Chicken Golden Delight 6.Barbeque Chicken 7.Chicken Fiesta
-Veg Extravaganza,Please choose the size? 1.Regular 2.Medium 3.Large
-Peppy Paneer,Please choose the size? 1.Regular 2.Medium 3.Large
-Double cheese Margherita,Please choose the size? 1.Regular 2.Medium 3.Large
-Corn pizza,Please choose the size? 1.Regular 2.Medium 3.Large
-FarmHouse,Please choose the size? 1.Regular 2.Medium 3.Large
-Margherita,Please choose the size? 1.Regular 2.Medium 3.Large
-Chicken Dominator,Please choose the size? 1.Regular 2.Medium 3.Large
-Cheese and Pepperoni,Please choose the size? 1.Regular 2.Medium 3.Large
-Non Veg Supreme,Please choose the size? 1.Regular 2.Medium 3.Large
-Chicken Mexicana,Please choose the size? 1.Regular 2.Medium 3.Large
-Chicken Golden Delight,Please choose the size? 1.Regular 2.Medium 3.Large
-Barbeque Chicken,Please choose the size? 1.Regular 2.Medium 3.Large
-Chicken Fiesta,Please choose the size? 1.Regular 2.Medium 3.Large
-Regular,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes 2.No"
-Medium,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes 2.No"
-Large,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes 2.No"
+Veg Extravaganza,Please choose the size? 1.Regular-$6 2.Medium-$7 3.Large-$8
+Peppy Paneer, Please choose the size? 1. Regular - $7 2. Medium - $8 3. Large - $9
+Double Cheese Margherita, Please choose the size? 1. Regular - $6 2. Medium - $7 3. Large - $8
+Corn Pizza, Please choose the size? 1. Regular - $7 2. Medium - $8 3. Large - $9
+FarmHouse, Please choose the size? 1. Regular - $8 2. Medium - $9 3. Large - $10
+Margherita, Please choose the size? 1. Regular - $6 2. Medium - $7 3. Large - $8
+Chicken Dominator, Please choose the size? 1. Regular - $9 2. Medium - $10 3. Large - $11
+Cheese and Pepperoni, Please choose the size? 1. Regular - $8 2. Medium - $9 3. Large - $10
+Non Veg Supreme, Please choose the size? 1. Regular - $9 2. Medium - $10 3. Large - $11
+Chicken Mexicana, Please choose the size? 1. Regular - $8 2. Medium - $9 3. Large - $10
+Chicken Golden Delight, Please choose the size? 1. Regular - $9 2. Medium - $10 3. Large - $11
+Barbeque Chicken, Please choose the size? 1. Regular - $8 2. Medium - $9 3. Large - $10
+Chicken Fiesta, Please choose the size? 1. Regular - $9 2. Medium - $10 3. Large - $11
+Regular,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes - $2 2.No"
+Medium,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes - $2 2.No"
+Large,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes - $2 2.No"
 Yes,Please choose how would you like to customize? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
-Crust Type, Pick a crust type. 1.Classic Hand Tossed 2.Wheat Thin Crust 3.Cheese Burst 4.Fresh Pan Pizza 5.Italian Crust 6.Double Cheese Crunch
+Crust Type, Pick a crust type. 1.Classic Hand Tossed - $1.50 2.Wheat Thin Crust - $2.00 3.Cheese Burst - $2.50 4.Fresh Pan Pizza - $1.75 5.Italian Crust - $2.25 6.Double Cheese Crunch -  $2.75
 Classic Hand Tossed, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
 Wheat Thin Crust, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
 Cheese Burst, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
 Fresh Pan Pizza, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
 Italian Crust, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
 Double Cheese Crunch, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
-Toppings, Select one or more Toppings. 1.Black Olive 2.Onion 3.Crisp Capsicum 4.Paneer 5.Mushroom 6.Golden Corn 7.Fresh Tomato 8.Jalapeno 9.Red Paprika 10.Babycorn 11.BBQ Chicken
+Toppings, Select one or more Toppings. 1.Black Olive - $0.75 2.Onion - $0.50 3.Crisp Capsicum - $0.60 4.Paneer - $1.00 5.Mushroom - $0.80 6.Golden Corn - $0.70 7.Fresh Tomato - $0.60 8.Jalapeno - $0.75 9.Red Paprika - $0.70 10.Babycorn - $1.20 11.BBQ Chicken - $1.50
 Black Olive, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
 Onion, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
 Crisp Capsicum, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
