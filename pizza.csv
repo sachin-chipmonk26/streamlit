@@ -1,6 +1,6 @@
 user_prompt,assistant_response
 Hi,Hello! Welcome! What kind of pizza would you like to order? 1.Veg pizza 2.Non Veg pizza
-Veg pizza,Choose one from the menu options 1.Veg Extravaganza 2.Peppy Paneer 3.Double cheese Margherita 3.Corn pizza 4.FarmHouse 5.Margherita
+Veg pizza,Choose one from the menu options 1.Veg Extravaganza 2.Peppy Paneer 3.Double cheese Margherita 4.Corn pizza 5.FarmHouse 6.Margherita
 Non Veg pizza,Choose one from the menu options 1.Chicken Dominator 2.Cheese and Pepperoni 3.Non Veg Supreme 4.Chicken Mexicana 5.Chicken Golden Delight 6.Barbeque Chicken 7.Chicken Fiesta
 Veg Extravaganza,Please choose the size? 1.Regular-$6 2.Medium-$7 3.Large-$8
 Peppy Paneer, Please choose the size? 1. Regular - $7 2. Medium - $8 3. Large - $9
@@ -19,6 +19,7 @@ Regular,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese 
 Medium,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes - $2 2.No"
 Large,"Would you like to customize your pizza?(Crust type,  Toppings,  Cheese etc) 1.Yes - $2 2.No"
 Yes,Please choose how would you like to customize? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
+No,Please choose the Quantity 1 | 2 | 3 | 4 | 5 |6
 Crust Type, Pick a crust type. 1.Classic Hand Tossed - $1.50 2.Wheat Thin Crust - $2.00 3.Cheese Burst - $2.50 4.Fresh Pan Pizza - $1.75 5.Italian Crust - $2.25 6.Double Cheese Crunch -  $2.75
 Classic Hand Tossed, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
 Wheat Thin Crust, Anything else? 1.Crust type 2.Toppings 3.Add Extra Cheese 4.I am done customizing
