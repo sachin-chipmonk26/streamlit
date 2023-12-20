@@ -3,14 +3,14 @@ import streamlit as st
 
 # Define pizza categories and questions
 categories = {
-    "types" : list(),
-    "varieties":list(),
-    "sizes":list(),
-    "is_customized":list(),
-    "customize":list(),
-    "crust_type":list(),
-    'toppings':list(),
-    "extra_cheese":list()
+    "types" : "",
+    "varieties":"",
+    "sizes":"",
+    "is_customized":"",
+    "customize":"",
+    "crust_type":"",
+    'toppings':"",
+    "extra_cheese":""
 }
 
 non_veg_pizza_types = [
@@ -70,10 +70,10 @@ toppings_dict = {
 
 if 'types' not in st.session_state:
     st.session_state['types'] = ''
-if 'veg_varities' not in st.session_state:
-    st.session_state['veg_varities'] = ''
-if 'non_veg_varities' not in st.session_state:
-    st.session_state['non_veg_varities'] = ''
+if 'veg_varieties' not in st.session_state:
+    st.session_state['veg_varieties'] = ''
+if 'non_veg_varieties' not in st.session_state:
+    st.session_state['non_veg_varieties'] = ''
 if 'sizes' not in st.session_state:
     st.session_state['sizes'] = ''
 if 'is_customized' not in st.session_state:
@@ -90,49 +90,31 @@ if 'extra_cheese' not in st.session_state:
 
 def click_button_type(types):
     st.session_state['types'] = types
-    categories["types"] = list()
-    categories["types"].append(types)
 
-def click_button_variety(varities):
+def click_button_variety(varieties):
     if(len(st.session_state['types'])!=0 and st.session_state['types'].lower() == "veg pizza"):
-        st.session_state['veg_varities'] = varities
-        categories["varities"] = list()
-        categories["varities"].append(varities)
+        st.session_state['veg_varieties'] = varieties
         
     elif(len(st.session_state['types'])!=0 and st.session_state['types'].lower() == "non veg pizza"):
-        st.session_state['non_veg_varities'] = varities
-        categories["varities"] = list()
-        categories["varities"].append(varities)
+        st.session_state['non_veg_varieties'] = varieties
 
 def click_button_size(sizes):
     st.session_state['sizes'] = sizes
-    categories["sizes"] = list()
-    categories["sizes"].append(sizes)
 
 def click_button_is_customize(flag):
     st.session_state['is_customized'] = flag
-    categories["is_customized"] = list()
-    categories["is_customized"].append(flag)
 
 def click_button_customize(customize):
     st.session_state['customize'] = customize
-    categories["customize"] = list()
-    categories["customize"].append(customize)
 
 def click_button_crust(crust):
     st.session_state['crust'] = crust
-    categories["crust_type"] = list()
-    categories["crust_type"].append(crust)
 
 def click_button_topping(toppings):
     st.session_state['toppings'] = toppings
-    categories["toppings"] = list()
-    categories["toppings"].append(toppings)
 
 def add_extra_cheese(cheese):
     st.session_state['extra_cheese'] = cheese
-    categories["extra_cheese"] = list()
-    categories["extra_cheese"].append(cheese)
 
 # Streamlit app
 def pizza_ordering_chatbot():
@@ -155,8 +137,8 @@ def pizza_ordering_chatbot():
             st.button('Corn Pizza', on_click=click_button_variety,args=['Corn Pizza'])
             st.button('FarmHouse', on_click=click_button_variety,args=['FarmHouse'])
             st.button('Margherita', on_click=click_button_variety,args=['Margherita'])  
-            st.text(st.session_state['veg_varities'])    
-            if(len(st.session_state['veg_varities'])!=0 and st.session_state['veg_varities'].lower() in [pizza.lower() for pizza in veg_pizza_types]):
+            st.text(st.session_state['veg_varieties'])    
+            if(len(st.session_state['veg_varieties'])!=0 and st.session_state['veg_varieties'].lower() in [pizza.lower() for pizza in veg_pizza_types]):
                 st.text('Please choose your size')
                 st.button('Regular', on_click=click_button_size,args=['Regular'])
                 st.button('Medium', on_click=click_button_size,args=['Medium'])
@@ -199,9 +181,23 @@ def pizza_ordering_chatbot():
                             st.text(st.session_state["toppings"])
                         elif(len(st.session_state['customize'])!=0 and st.session_state['customize'].lower() == "add extra cheese"):
                             add_extra_cheese("Yes")
-                            st.text(st.session_state["extra_cheese"])
                         elif(len(st.session_state['customize'])!=0 and st.session_state['customize'].lower() == "i am done customizing"):
                             st.text("Coding in progress")
+                            categories["types"] = st.session_state["types"]
+                            if(len(st.session_state["veg_varieties"])>0):
+                                categories['varieties'] = st.session_state["veg_varieties"]
+                            else:
+                                categories['varieties'] = st.session_state["non_veg_varieties"]
+                            categories['crust_type'] = st.session_state["crust"]
+                            categories['toppings'] = st.session_state["toppings"]
+                            categories['extra_cheese'] = st.session_state["extra_cheese"]
+
+                            print("types", categories["varieties"])  # Fix: Added the missing closing parenthesis
+                            print("types", categories["crust_type"])  # Fix: Added the missing closing parenthesis
+                            print("types", categories["toppings"])  # Fix: Added the missing closing parenthesis
+                            print("types", categories["extra_cheese"])  # Fix: Added the missing closing parenthesis
+                            
+
                     elif(len(st.session_state['is_customized'])!=0 and st.session_state['is_customized'].lower() == "no"):
                         st.text("Coding in progress")
         elif(len(st.session_state['types'])!=0 and st.session_state['types'].lower() == "non veg pizza"):
@@ -213,8 +209,8 @@ def pizza_ordering_chatbot():
             st.button('Chicken Golden Delight', on_click=click_button_variety,args=['Chicken Golden Delight'])
             st.button('Barbeque Chicken', on_click=click_button_variety,args=['Barbeque Chicken'])
             st.button('Chicken Fiesta', on_click=click_button_variety,args=['Chicken Fiesta'])
-            st.text(st.session_state['non_veg_varities'])  
-            if(len(st.session_state['non_veg_varities'])!=0 and st.session_state['non_veg_varities'].lower() in [pizza.lower() for pizza in non_veg_pizza_types]):
+            st.text(st.session_state['non_veg_varieties'])  
+            if(len(st.session_state['non_veg_varieties'])!=0 and st.session_state['non_veg_varieties'].lower() in [pizza.lower() for pizza in non_veg_pizza_types]):
                 st.text('Please choose your size')
                 st.button('Regular', on_click=click_button_size,args=['Regular'])
                 st.button('Medium', on_click=click_button_size,args=['Medium'])
